@@ -2,6 +2,7 @@
 # 3D Model
 The plan is created with `CADQuery 2.1` in `CQ-editor 0.3.0.dev0`.
 
+![screenshot.png](screenshot.png)
 ### Install micromamba
 Tested with Microbamba 0.9.2
 ```Bash
