@@ -1,6 +1,6 @@
 
 # 3D Model
-The plan is created with `CADQuery 2.1` in `CQ-editor 0.3.0.dev0`.
+The plan is created with `CADQuery 2.1` in `CQ-editor 0.3.0.dev0` - insipred by [@DanielLaszlo](https://github.com/DanielLaszlo)
 
 ![screenshot.png](screenshot.png)
 ### Install micromamba
