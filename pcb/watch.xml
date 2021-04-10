@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dasz/git/watch/pcb/watch/watch.sch</source>
+    <date>2021. jan. 18., hétfő, 22:06:28 CET</date>
+    <tool>Eeschema 5.1.8-db9833491~88~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Binary Watch</title>
+        <company>github.com/szdani</company>
+        <rev>v0.1</rev>
+        <date>2021-01-09</date>
+        <source>watch.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Y2">
+      <value>32MHz</value>
+      <footprint>Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1912111437_YL-Failong-Crystal-2S32000059_C431153.pdf</datasheet>
+      <fields>
+        <field name="Item">https://lcsc.com/product-detail/SMD-Crystal-Resonators_YL-Failong-Crystal-2S32000059_C431153.html</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24_Small" description="Four pin crystal, GND on pins 2 and 4, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF039B0</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF07BD3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF17408</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>32.768KHZ</value>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Crystal_Small" description="Two pin crystal, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF2EFE2</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF318C2</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C_Small</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF31DC9</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>2.7nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF4E31C</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.8pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF4ED8E</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.3pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF4F29C</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF74ECE</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF752C4</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF8ADD2</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED_Red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF8B317</tstamp>
+    </comp>
+    <comp ref="AE1">
+      <value>Antenna</value>
+      <footprint>custom:STM32_PCB_Antenna_Mirrored</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Antenna" description="Antenna"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFAC405</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFC9BE3</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFCA3AA</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD0654</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD0AA7</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD0F23</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD13F6</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>XC6206PxxxMR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.torexsemi.com/file/xc6206/XC6206.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="XC6206PxxxMR" description="Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60037B32</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>200mA</value>
+      <footprint>Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse_Small" description="Fuse, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60039F74</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>100 @ 100 MHz</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="FerriteBead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6003AAD6</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6004F84F</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6005344E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3401A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007EE10</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04_Female</value>
+      <footprint>custom:Connector_PCB</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x04_Female" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602A7F36</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SLFL18-2R450G-02TF</value>
+      <footprint>custom:SLFL18</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1811071713_Sunlord-SLFL18-2R450G-02TF_C96780.pdf</datasheet>
+      <libsource lib="CustomParts" part="SLFL18-2R450G-02TF" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6034C133</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Batt</value>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF82492</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>STM32WB30CEU5A</value>
+      <footprint>Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm</footprint>
+      <libsource lib="CustomParts" part="STM32WB30CEU5A" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEFEC76</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60068DFE</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60068E05</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60068E0B</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60068E13</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6006E112</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6006E119</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6006E11F</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6006E127</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60073656</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007365D</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60073663</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007366B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60078ED4</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60078EDB</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60078EE1</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60078EE9</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007E4B3</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007E4BA</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007E4C0</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6007E4C8</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6008405A</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60084061</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60084067</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6008406F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFBDC65</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFBDC6C</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFBDC72</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFBDC7A</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFCC6D8</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFCC6DF</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFCC6E5</tstamp>
+    </comp>
+    <comp ref="Q11">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFCC6ED</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD1D52</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD1D59</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD1D5F</tstamp>
+    </comp>
+    <comp ref="Q9">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD1D67</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>160</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD779F</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED_Blue</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD77A6</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>20 Ohm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD77AC</tstamp>
+    </comp>
+    <comp ref="Q10">
+      <value>VBK162K</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFD77B4</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>Omron Electronics B3U-3000PM-B </value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-3000P-B</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFA7243</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFB6EC4</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFB9B95</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FFEB462</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>SMD_1</value>
+      <footprint>custom:SMD_Tooling_Hole</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60046491</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>SMD2</value>
+      <footprint>custom:SMD_Tooling_Hole</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60048B32</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Female">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Female">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CustomParts" part="SLFL18-2R450G-02TF">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SLFL18-2R450G-02TF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="OUT" type="input"/>
+        <pin num="6" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="CustomParts" part="STM32WB30CEU5A">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32WB30CEU5A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBAT" type="input"/>
+        <pin num="2" name="PC14-OSC32-IN" type="input"/>
+        <pin num="3" name="PC15-OSC32-OUT" type="input"/>
+        <pin num="4" name="PH3-BOOT0" type="input"/>
+        <pin num="5" name="PB8" type="input"/>
+        <pin num="6" name="PB9" type="input"/>
+        <pin num="7" name="NRST" type="input"/>
+        <pin num="8" name="VDDA" type="input"/>
+        <pin num="9" name="PA0" type="input"/>
+        <pin num="10" name="PA1" type="input"/>
+        <pin num="11" name="PA2" type="input"/>
+        <pin num="12" name="PA3" type="input"/>
+        <pin num="13" name="PA4" type="input"/>
+        <pin num="14" name="PA5" type="input"/>
+        <pin num="15" name="PA6" type="input"/>
+        <pin num="16" name="PA7" type="input"/>
+        <pin num="17" name="PA8" type="input"/>
+        <pin num="18" name="PA9" type="input"/>
+        <pin num="19" name="PB2" type="input"/>
+        <pin num="20" name="VDD" type="input"/>
+        <pin num="21" name="RF1" type="input"/>
+        <pin num="22" name="VSSRF" type="input"/>
+        <pin num="23" name="VDDRF" type="input"/>
+        <pin num="24" name="OSC_OUT" type="input"/>
+        <pin num="25" name="OSC_IN" type="input"/>
+        <pin num="26" name="AT0" type="input"/>
+        <pin num="27" name="AT1" type="input"/>
+        <pin num="28" name="PB0" type="input"/>
+        <pin num="29" name="PB1" type="input"/>
+        <pin num="30" name="PE4" type="input"/>
+        <pin num="31" name="VDD" type="input"/>
+        <pin num="32" name="VSS" type="input"/>
+        <pin num="33" name="VDD" type="input"/>
+        <pin num="34" name="VDD" type="input"/>
+        <pin num="35" name="VDD" type="input"/>
+        <pin num="36" name="PA10" type="input"/>
+        <pin num="37" name="PA11" type="input"/>
+        <pin num="38" name="PA12" type="input"/>
+        <pin num="39" name="PA13" type="input"/>
+        <pin num="40" name="VDD" type="input"/>
+        <pin num="41" name="PA14" type="input"/>
+        <pin num="42" name="PA15" type="input"/>
+        <pin num="43" name="PB3" type="input"/>
+        <pin num="44" name="PB4" type="input"/>
+        <pin num="45" name="PB5" type="input"/>
+        <pin num="46" name="PB6" type="input"/>
+        <pin num="47" name="PB7" type="input"/>
+        <pin num="48" name="VDD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Antenna">
+      <description>Antenna</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">AE</field>
+        <field name="Value">Antenna</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24_Small">
+      <description>Four pin crystal, GND on pins 2 and 4, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_Small">
+      <description>Two pin crystal, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="FerriteBead_Small">
+      <description>Ferrite bead, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FerriteBead_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse_Small">
+      <description>Fuse, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="APE8865N-12-HF-3">
+      <aliases>
+        <alias>APE8865N-15-HF-3</alias>
+        <alias>APE8865N-16-HF-3</alias>
+        <alias>APE8865N-17-HF-3</alias>
+        <alias>APE8865N-18-HF-3</alias>
+        <alias>APE8865N-19-HF-3</alias>
+        <alias>APE8865N-20-HF-3</alias>
+        <alias>APE8865N-21-HF-3</alias>
+        <alias>APE8865N-22-HF-3</alias>
+        <alias>APE8865N-23-HF-3</alias>
+        <alias>APE8865N-24-HF-3</alias>
+        <alias>APE8865N-25-HF-3</alias>
+        <alias>APE8865N-26-HF-3</alias>
+        <alias>APE8865N-27-HF-3</alias>
+        <alias>APE8865N-28-HF-3</alias>
+        <alias>APE8865N-29-HF-3</alias>
+        <alias>APE8865N-30-HF-3</alias>
+        <alias>APE8865N-31-HF-3</alias>
+        <alias>APE8865N-32-HF-3</alias>
+        <alias>APE8865N-33-HF-3</alias>
+        <alias>AP2127N-1.0</alias>
+        <alias>AP2127N-1.2</alias>
+        <alias>AP2127N-1.5</alias>
+        <alias>AP2127N-1.8</alias>
+        <alias>AP2127N-2.5</alias>
+        <alias>AP2127N-2.8</alias>
+        <alias>AP2127N-3.0</alias>
+        <alias>AP2127N-3.3</alias>
+        <alias>XC6206PxxxMR</alias>
+      </aliases>
+      <description>300mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23</description>
+      <docs>http://www.tme.eu/fr/Document/ced3461ed31ea70a3c416fb648e0cde7/APE8865-3.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">APE8865N-12-HF-3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="TP0610T">
+      <aliases>
+        <alias>VP0610T</alias>
+        <alias>BSS84</alias>
+        <alias>NTR2101P</alias>
+        <alias>BSS83P</alias>
+        <alias>Si2319CDS</alias>
+        <alias>IRLML6401</alias>
+        <alias>IRLML6402</alias>
+        <alias>DMG2301L</alias>
+        <alias>AO3401A</alias>
+        <alias>IRLML9301</alias>
+        <alias>IRLML5203</alias>
+        <alias>Si2371EDS</alias>
+        <alias>TSM2301ACX</alias>
+        <alias>FDN340P</alias>
+      </aliases>
+      <description>-0.18A Id, -60V Vds, P-Channel MOSFET, SOT-23</description>
+      <docs>http://www.vishay.com/docs/70209/70209.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TP0610T</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Connector.lib</uri>
+    </library>
+    <library logical="CustomParts">
+      <uri>/home/dasz/git/watch/pcb/watch/CustomParts.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Mechanical.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>/home/dasz/git/kicad/kicad-symbols-master/Transistor_FET.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="2" name="LED_M_16">
+      <node ref="R11" pin="2"/>
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="3" name="Net-(D6-Pad1)">
+      <node ref="Q4" pin="2"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D6-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="C13" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="Y2" pin="4"/>
+      <node ref="Y2" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="Q11" pin="3"/>
+      <node ref="Q10" pin="3"/>
+      <node ref="C15" pin="2"/>
+      <node ref="Q7" pin="3"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C10" pin="1"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="U1" pin="22"/>
+      <node ref="U1" pin="32"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="Q9" pin="3"/>
+      <node ref="J2" pin="2"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="6" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="7" name="Net-(D2-Pad1)">
+      <node ref="Q2" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="8" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="9" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="10" name="LED_M_4">
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="11" name="Net-(D4-Pad1)">
+      <node ref="Q3" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="12" name="Net-(D4-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="13" name="Net-(Q6-Pad1)">
+      <node ref="R16" pin="1"/>
+      <node ref="Q6" pin="1"/>
+    </net>
+    <net code="14" name="LED_M_8">
+      <node ref="R16" pin="2"/>
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="15" name="Net-(D9-Pad1)">
+      <node ref="Q6" pin="2"/>
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="16" name="Net-(D9-Pad2)">
+      <node ref="D9" pin="2"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="20" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="22" name="LF_OSC_IN">
+      <node ref="C3" pin="1"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="23" name="ANTENNA">
+      <node ref="L1" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="24" name="RF_OSC_OUT">
+      <node ref="Y2" pin="1"/>
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="29" name="+BATT">
+      <node ref="J2" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="30" name="LF_OSC_OUT">
+      <node ref="Y1" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="31" name="LED_NOTIF">
+      <node ref="U1" pin="10"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="33" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad47)">
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="35" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="37" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="38" name="SWCLK">
+      <node ref="U1" pin="41"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="39" name="SWDIO">
+      <node ref="U1" pin="39"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="40" name="LED_M_32">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="41" name="VDD">
+      <node ref="R14" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="U1" pin="20"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="23"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U1" pin="40"/>
+      <node ref="R23" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="48"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U1" pin="31"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="33"/>
+      <node ref="U1" pin="34"/>
+      <node ref="U1" pin="35"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="42" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="43" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1"/>
+      <node ref="Q10" pin="2"/>
+    </net>
+    <net code="44" name="Net-(Q10-Pad1)">
+      <node ref="Q10" pin="1"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="45" name="LED_H_1">
+      <node ref="R20" pin="2"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="46" name="Net-(D5-Pad2)">
+      <node ref="R22" pin="2"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="47" name="Net-(D3-Pad1)">
+      <node ref="Q9" pin="2"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="48" name="Net-(Q9-Pad1)">
+      <node ref="Q9" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="49" name="LED_H_2">
+      <node ref="U1" pin="12"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="50" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="51" name="Net-(C15-Pad1)">
+      <node ref="R24" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C15" pin="1"/>
+    </net>
+    <net code="52" name="BUTTON">
+      <node ref="U1" pin="46"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="53" name="Net-(Q7-Pad1)">
+      <node ref="Q7" pin="1"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="54" name="LED_M_1">
+      <node ref="R17" pin="2"/>
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="55" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="Q7" pin="2"/>
+    </net>
+    <net code="56" name="Net-(D11-Pad2)">
+      <node ref="D11" pin="2"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="57" name="Net-(Q5-Pad1)">
+      <node ref="R13" pin="1"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="58" name="LED_M_2">
+      <node ref="U1" pin="43"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="59" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1"/>
+      <node ref="Q5" pin="2"/>
+    </net>
+    <net code="60" name="Net-(D8-Pad2)">
+      <node ref="D8" pin="2"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="61" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1"/>
+      <node ref="Q11" pin="2"/>
+    </net>
+    <net code="62" name="Net-(Q11-Pad1)">
+      <node ref="R21" pin="1"/>
+      <node ref="Q11" pin="1"/>
+    </net>
+    <net code="63" name="LED_H_4">
+      <node ref="U1" pin="13"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="64" name="Net-(D7-Pad2)">
+      <node ref="R23" pin="2"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="65" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="Q8" pin="2"/>
+    </net>
+    <net code="66" name="Net-(Q8-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="Q8" pin="1"/>
+    </net>
+    <net code="67" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="68" name="LED_H_8">
+      <node ref="U1" pin="14"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="69" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="70" name="BOOT0">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="71" name="RF_OSC_IN">
+      <node ref="U1" pin="25"/>
+      <node ref="Y2" pin="3"/>
+    </net>
+    <net code="72" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="73" name="Net-(F1-Pad1)">
+      <node ref="F1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="74" name="Net-(C7-Pad1)">
+      <node ref="FB1" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="75" name="Net-(AE1-Pad1)">
+      <node ref="AE1" pin="1"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="76" name="Net-(F1-Pad2)">
+      <node ref="FB1" pin="2"/>
+      <node ref="F1" pin="2"/>
+    </net>
+  </nets>
+</export>

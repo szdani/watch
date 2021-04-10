@@ -1,0 +1,16 @@
+(module STM32_PCB_Antenna_Mirrored (layer F.Cu) (tedit 5FF1F3DA)
+  (fp_text reference G*** (at -2.54 -7.62) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text value STM32_Antenna (at 3.81 -5.08) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_poly (pts (xy 0.889 -3.05816) (xy 2.22504 -3.05816) (xy 2.22504 -3.52552) (xy 0.889 -3.52552)) (layer F.Mask) (width 0))
+  (fp_poly (pts (xy -4.507653 -1.893147) (xy 4.382347 -1.893147) (xy 4.382347 -1.131147) (xy -4.507653 -1.131147)
+    (xy -4.507653 0.47752) (xy 4.382347 0.47752) (xy 4.382347 1.23952) (xy 1.842347 1.23952)
+    (xy 1.842347 2.76352) (xy 2.350347 2.76352) (xy 2.350347 1.74752) (xy 4.80568 1.74752)
+    (xy 4.80568 0.054187) (xy -4.08432 0.054187) (xy -4.08432 -0.707813) (xy 4.80568 -0.707813)
+    (xy 4.80568 -2.31648) (xy -4.08432 -2.31648) (xy -4.08432 -3.07848) (xy 2.181014 -3.07848)
+    (xy 2.181014 -3.501813) (xy -4.507653 -3.501813) (xy -4.507653 -1.893147)) (layer F.Cu) (width 0.01))
+  (pad 1 smd rect (at 2.08026 2.5654) (size 0.4 0.4) (layers F.Cu F.Paste F.Mask))
+)
