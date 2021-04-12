@@ -1,11 +1,12 @@
 import cadquery as cq
 
-WALL = 1.5
+WALL = 0.9
 INNER_RADIUS = 20
 PCB_THICKNESS = 1.6
 BATTERY_HOLDER_HEIGHT = 4.5
+BATTERY_HOLDER_WIDTH = 20
 BATTERY_HOLDER_POSITION = (0,-11.0,2)
-WATCHFACE_HOLDER_POSITION_1 = (17.5, 0, 2)
+WATCHFACE_HOLDER_POSITION_1 = (16.9, 0, 2)
 WATCHFACE_SCREW_POSITION_1 = (17.5, 0, 1)
 BOTTOM_PART_HEIGHT = 6
 TOLERANCE=0.1
@@ -21,8 +22,8 @@ button_hole = cq.Workplane("XY").circle(1.5).extrude(10)\
             
 body = cq.Workplane("XY" )\
         .circle(INNER_RADIUS-TOLERANCE).extrude(BOTTOM_PART_HEIGHT)\
-        .faces("+Z").shell(WALL+TOLERANCE, kind='arc')\
-        .cut(button_hole)
+        .faces("+Z").shell(WALL+TOLERANCE, kind='intersection')\
+        .cut(button_hole).faces("<Z").fillet(3.5)\
 
 connection_shell = cq.Workplane("XY" )\
         .circle(INNER_RADIUS-CONNECTION_CAP_SIZE-TOLERANCE)\
@@ -30,9 +31,17 @@ connection_shell = cq.Workplane("XY" )\
         .faces("+Z").shell(CONNECTION_CAP_SIZE, kind='arc')\
         .cut(button_hole)
 
+battery_holder_fixation = cq.Workplane("XY")\
+        .line(BATTERY_HOLDER_HEIGHT, 0)\
+        .line(0, 3)\
+        .close().extrude(1)\
+        .rotate((0, -1, 0),(0, 0, 0), 90)\
+        .translate((0,11.725,BATTERY_HOLDER_HEIGHT-0.3))
+
 battery_holder_left = cq.Workplane("XY" )\
         .box(20,1.5,BATTERY_HOLDER_HEIGHT)\
-        .translate(BATTERY_HOLDER_POSITION)
+        .translate(BATTERY_HOLDER_POSITION)\
+        .union(battery_holder_fixation)
 battery_holder_right = battery_holder_left.mirror(mirrorPlane="XZ")
 
 cut_watchface_screw_hole = cq.Workplane("XY" )\
@@ -40,9 +49,9 @@ cut_watchface_screw_hole = cq.Workplane("XY" )\
         .extrude(4)\
         .translate(WATCHFACE_SCREW_POSITION_1)
 
-watchface_holder_1 = cq.Workplane("XY").box(4,10,BATTERY_HOLDER_HEIGHT)\
+watchface_holder_1 = cq.Workplane("XY").box(5,5,BATTERY_HOLDER_HEIGHT)\
                     .translate(WATCHFACE_HOLDER_POSITION_1)\
-                    .edges("|Z").fillet(1.1)\
+                    .edges("<X and |Z").fillet(1.5)\
                     .cut(cut_watchface_screw_hole)
 
 watchface_holder_2 = watchface_holder_1.mirror(mirrorPlane="YZ")
@@ -75,7 +84,8 @@ right_leg = leg_base\
         .edges("|Y").fillet(1.5)\
         .translate((0,STRAP_SIZE/2+TOLERANCE,-1.5))\
         .cut(cut3_watch_base)\
-        .cut(cut4_strap_hole).cut(cut5_strap_hole)
+        .cut(cut4_strap_hole).cut(cut5_strap_hole)\
+        .translate((0,0,1.5))
         
 left_leg = right_leg.mirror(mirrorPlane="XZ")
 
