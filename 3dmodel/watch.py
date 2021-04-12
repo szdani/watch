@@ -1,16 +1,18 @@
 import cadquery as cq
 
 WALL = 1.5
-INNER_RADIUS = 21
+INNER_RADIUS = 20
 PCB_THICKNESS = 1.6
 BATTERY_HOLDER_HEIGHT = 4.5
-BATTERY_HOLDER_POSITION_1 = (17.5, 0)
-BATTERY_HOLDER_POSITION_2 = (-17.5, 0)
+BATTERY_HOLDER_POSITION = (0,-11.0,2)
+WATCHFACE_HOLDER_POSITION_1 = (17.5, 0, 2)
+WATCHFACE_SCREW_POSITION_1 = (17.5, 0, 1)
 BOTTOM_PART_HEIGHT = 6
 TOLERANCE=0.1
 CONNECTION_CAP_SIZE = 0.8
-LEG_SIZE = 57
-STRAP_SIZE = 22
+LEG_SIZE = 2*INNER_RADIUS+14
+LEG_HOLE_OFFSET = INNER_RADIUS + 5
+STRAP_SIZE = 19
 
 ### Watch Face ###
 button_hole = cq.Workplane("XY").circle(1.5).extrude(10)\
@@ -30,13 +32,19 @@ connection_shell = cq.Workplane("XY" )\
 
 battery_holder_left = cq.Workplane("XY" )\
         .box(20,1.5,BATTERY_HOLDER_HEIGHT)\
-        .translate((0,-11.0,2))
+        .translate(BATTERY_HOLDER_POSITION)
 battery_holder_right = battery_holder_left.mirror(mirrorPlane="XZ")
 
-watchface_holder_1 = cq.Workplane("XY" )\
+cut_watchface_screw_hole = cq.Workplane("XY" )\
         .circle(0.8)\
-        .extrude(BATTERY_HOLDER_HEIGHT+PCB_THICKNESS)\
-        .translate(BATTERY_HOLDER_POSITION_1)
+        .extrude(4)\
+        .translate(WATCHFACE_SCREW_POSITION_1)
+
+watchface_holder_1 = cq.Workplane("XY").box(4,10,BATTERY_HOLDER_HEIGHT)\
+                    .translate(WATCHFACE_HOLDER_POSITION_1)\
+                    .edges("|Z").fillet(1.1)\
+                    .cut(cut_watchface_screw_hole)
+
 watchface_holder_2 = watchface_holder_1.mirror(mirrorPlane="YZ")
 
 ### LEGS ###
@@ -57,7 +65,7 @@ cut2_top_profile = cq.Workplane("XY").circle(80)\
                     .rotate((0,0,0),(1,0,0),90)
 cut3_watch_base = cq.Workplane("XY").circle(WALL+INNER_RADIUS).extrude(10)
 cut4_strap_hole = cq.Workplane("XY").circle(1).extrude(30)\
-                .translate((26,0.4,-15))\
+                .translate((LEG_HOLE_OFFSET,0.4,-15))\
                 .rotate((0, 0, 0),(1, 0, 0), 90)
 cut5_strap_hole = cut4_strap_hole.mirror(mirrorPlane="YZ")
 
@@ -91,7 +99,6 @@ top_body = cq.Workplane("XY")\
     .close()\
     .revolve(axisStart=(1, 0), axisEnd=(0, 0), angleDegrees=360)\
     .rotate((0, 0, 0),(0, 1, 0), 90).translate((-50,0,4))
-
 
 show_object(result)
 show_object(top_body)
